@@ -1,0 +1,35 @@
+---
+label: Article
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+  description: Title of the article
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+  description: Description of the article
+- name: language
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - en
+    - es
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: language
+  description: Language of the article
+- name: published
+  type: boolean
+  label: Published
+  description: If the article is published or not.
